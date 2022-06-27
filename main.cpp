@@ -8,8 +8,10 @@ int main()
 {
     char select;
     float first, second, result;
+
     cout<<"For + press \"+\"\n for - press\"-\"\n for * press \"*\"\n for / press \"/\" : ";
     cin>>select;
+
     cout<<"Enter 1st number : ";
     cin>>first;
 
@@ -21,12 +23,15 @@ int main()
         case '+':
             result = first + second;
             break;
+
         case '-': 
             result = first - second;
             break;
+
         case '*': 
             result = first * second;
             break;
+
         case '/':
             result = first / second;
             break;
@@ -35,5 +40,10 @@ int main()
             cout<<endl<<"Wrong Input.\a\n";
             break;
     }
+
+    cout<<endl<<"Result is : "<<result;
+    
+    getch();
+    return 0;
 
 }
