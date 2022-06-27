@@ -13,5 +13,6 @@ int main()
     result = first + second;
     cout<<endl<<"Sum of "<<first<<" and "<<second<<" is "<<result;
     getch();
+    getch();
     return 0;
 }
