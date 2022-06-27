@@ -36,6 +36,7 @@ float doCalculation(char option, float firstNumber, float secondNumber)
     cout<<" . ";
     Sleep(1000);
     cout<<" . ";
+    Sleep(1000);
     return result;
 }
 
