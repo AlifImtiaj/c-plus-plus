@@ -1,18 +1,39 @@
 #include <iostream>
 #include <conio.h>
+#include <math.h>
 
 using namespace std;
 
 int main()
 {
+    char select;
     float first, second, result;
-    cout<<"Enter first number : ";
+    cout<<"For + press \"+\"\n for - press\"-\"\n for * press \"*\"\n for / press \"/\" : ";
+    cin>>select;
+    cout<<"Enter 1st number : ";
     cin>>first;
-    cout<<endl<<"Enter second number : ";
+
+    cout<<endl<<"Enter 2nd number : ";
     cin>>second;
-    result = first + second;
-    cout<<endl<<"Sum of "<<first<<" and "<<second<<" is "<<result;
-    getch();
-    getch();
-    return 0;
+
+    switch(select)
+    {
+        case '+':
+            result = first + second;
+            break;
+        case '-': 
+            result = first - second;
+            break;
+        case '*': 
+            result = first * second;
+            break;
+        case '/':
+            result = first / second;
+            break;
+
+        default:
+            cout<<endl<<"Wrong Input.\a\n";
+            break;
+    }
+
 }
